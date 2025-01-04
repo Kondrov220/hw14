@@ -1,5 +1,5 @@
-const man = [
-    {name: "Mango", eyeColor: "green", gender: "male", isActive: true, email: "mango@gmail.com", age: 18},
+const people = [
+    {name: "peoplego", eyeColor: "green", gender: "male", isActive: true, email: "peoplego@gmail.com", age: 18},
     {name: "Poly", eyeColor: "blue", gender: "female", isActive: false, email: "poly@gmail.com", age: 20},
     {name: "Kiwi", eyeColor: "green", gender: "male", isActive: false, email: "kiwi@gmail.com", age: 20},
     {name: "Ajax", eyeColor: "braun", gender: "male", isActive: true, email: "ajax@gmail.com", age: 19},
@@ -7,26 +7,26 @@ const man = [
     {name: "Magge", eyeColor: "braun", gender: "female", isActive: true, email: "magge@gmail.com", age: 21}
 ]
 //1
-const allMan = man.map((mans) => mans.name);
-console.log(allMan);
+const allPeople = people.map((person) => person.name);
+console.log(allPeople);
 //2
-const greenEye = man.filter(mans => mans.eyeColor === "green");
+const greenEye = people.filter(person => person.eyeColor === "green");
 console.log(greenEye);
-const braunEye = man.filter(mans => mans.eyeColor === "braun");
+const braunEye = people.filter(person => person.eyeColor === "braun");
 console.log(braunEye);
-const blueEye = man.filter(mans => mans.eyeColor === "blue");
+const blueEye = people.filter(person => person.eyeColor === "blue");
 console.log(blueEye);
 //3
-const allMale = man.filter(mans => mans.gender === "male");
+const allMale = people.filter(person => person.gender === "male");
 console.log(allMale);
-const allFemale = man.filter(mans => mans.gender === "female");
+const allFemale = people.filter(person => person.gender === "female");
 console.log(allFemale);
 //4
-const active = man.filter(mans => mans.isActive === false);
+const active = people.filter(person => person.isActive === false);
 console.log(active);
 //5
-const emailOne = man.find(mans => mans.email === "kiwi@gmail.com");
+const emailOne = people.find(person => person.email === "kiwi@gmail.com");
 console.log(emailOne);
 //6
-const allAge = man.filter(mans => mans.age > 19 && mans.age < 21);
+const allAge = people.filter(person => person.age > 19 && person.age < 21);
 console.log(allAge);
